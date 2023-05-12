@@ -30,4 +30,4 @@ Este projeto foi desenvolvido como parte de um trabalho acadêmico e não está 
 
 ## Licença
 
-Este projeto está licenciado sob a Licença MIT - consulte o arquivo LICENSE para obter detalhes.
+Este projeto está licenciado sob a BSD 3-Clause "New" or "Revised" License - consulte o arquivo LICENSE para obter detalhes.
