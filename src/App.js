@@ -9,6 +9,7 @@ function App() {
   const webcamRef = useRef(null);
   const canvasRef = useRef(null);
 
+  //inicializa a logica do programa
   const runPosenet = async () => {
     const net = await posenet.load({
       inputResolution: { width: 640, height: 480 },
@@ -19,6 +20,7 @@ function App() {
     }, 100);
   };
 
+  //detecta as movimentacoes feitas na webcam e captura os logs de cada micro-movimentcao
   const detect = async (net) => {
     if (
       typeof webcamRef.current !== "undefined" &&
@@ -39,6 +41,7 @@ function App() {
     }
   };
 
+  //desenha os pontos e os tracos no squeleto
   const drawCanvas = (pose, video, videoWidth, videoHeight, canvas) => {
     const ctx = canvas.current.getContext("2d");
     canvas.current.width = videoWidth;
@@ -50,6 +53,8 @@ function App() {
 
   runPosenet();
 
+  //Abaixo eu estou abrindo a TAG Webcam, que esta sendo carregada da biblioteca react-webcam. Nela eu passo as dimensoes de ontem sera exibido a camera na tela e tambem 
+  //utilizo ela para passar informacoes das minhas movimentacoes para a variavel webcamRef
   return (
     <div className="App">
       <header className="App-header">
@@ -85,6 +90,8 @@ function App() {
       </header>
     </div>
   );
+
+  //Um pouco acima temos a TAG canvas que esta sendo utilizada para desenhar os pontos de movimentos e o esqueleto da movimentacao.
 }
 
 export default App;
