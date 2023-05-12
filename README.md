@@ -1,70 +1,33 @@
-# Getting Started with Create React App
+# Detecção de Movimentos Corporais com TensorFlow em tempo real
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este repositório contém uma aplicação em ReactJS que utiliza a biblioteca TensorFlow para capturar movimentos corporais em tempo real, com a ajuda de inteligência artificial.
 
-## Available Scripts
+## Funcionamento
 
-In the project directory, you can run:
+A aplicação utiliza o modelo pré-treinado PoseNet, fornecido pela biblioteca TensorFlow.js, para detectar as poses corporais em tempo real a partir de uma webcam conectada ao dispositivo.
 
-### `npm start`
+Com base nas poses detectadas, a aplicação utiliza uma rede neural para classificar o movimento como uma das seguintes categorias: agachamento, flexão de braço ou prancha.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+A interface da aplicação mostra um feed de vídeo da webcam, juntamente com uma lista dos movimentos realizados pelo usuário e uma contagem de quantas repetições foram realizadas para cada um dos movimentos.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Instalação e Uso
 
-### `npm test`
+Para executar a aplicação localmente, siga os seguintes passos:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Clone este repositório em sua máquina local usando **`git clone https://github.com/omatheusribeiro/real-time-pose`**.
 
-### `npm run build`
+- Navegue até o diretório criado pelo clone do repositório usando **`cd real-time-pose`**.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Instale as dependências do projeto utilizando **`npm install`**.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Inicie a aplicação usando npm start.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Acesse a aplicação em seu navegador, através do endereço **`http://localhost:3000`**.
 
-### `npm run eject`
+## Contribuição
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Este projeto foi desenvolvido como parte de um trabalho acadêmico e não está sendo mantido ativamente. No entanto, se você encontrar algum problema ou tiver alguma sugestão de melhoria, sinta-se à vontade para abrir uma issue ou enviar um pull request.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Licença
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Este projeto está licenciado sob a Licença MIT - consulte o arquivo LICENSE para obter detalhes.
