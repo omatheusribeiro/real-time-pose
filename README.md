@@ -1,33 +1,33 @@
-# Detecção de Movimentos Corporais com TensorFlow em tempo real
+# Real-Time Body Movement Detection with TensorFlow
 
-Este repositório contém uma aplicação em ReactJS que utiliza a biblioteca TensorFlow para capturar movimentos corporais em tempo real, com a ajuda de inteligência artificial.
+This repository contains a ReactJS application that utilizes the TensorFlow library to capture real-time body movements with the assistance of artificial intelligence.
 
-## Funcionamento
+## How It Works
 
-A aplicação utiliza o modelo pré-treinado PoseNet, fornecido pela biblioteca TensorFlow.js, para detectar as poses corporais em tempo real a partir de uma webcam conectada ao dispositivo.
+The application utilizes the pre-trained PoseNet model provided by the TensorFlow.js library to detect real-time body poses from a webcam connected to the device.
 
-Com base nas poses detectadas, a aplicação utiliza uma rede neural para classificar o movimento como uma das seguintes categorias: agachamento, flexão de braço ou prancha.
+Based on the detected poses, the application uses a neural network to classify the movement into one of the following categories: squat, push-up, or plank.
 
-A interface da aplicação mostra um feed de vídeo da webcam, juntamente com uma lista dos movimentos realizados pelo usuário e uma contagem de quantas repetições foram realizadas para cada um dos movimentos.
+The application's interface displays a webcam video feed, along with a list of the user's performed movements and a count of how many repetitions have been completed for each of the movements.
 
-## Instalação e Uso
+## Installation and Usage
 
-Para executar a aplicação localmente, siga os seguintes passos:
+To run the application locally, follow these steps:
 
-- Clone este repositório em sua máquina local usando **`git clone https://github.com/omatheusribeiro/real-time-pose`**.
+- Clone this repository to your local machine using **`git clone https://github.com/omatheusribeiro/real-time-pose`**.
 
-- Navegue até o diretório criado pelo clone do repositório usando **`cd real-time-pose`**.
+- Navigate to the directory created by the repository clone using **`cd real-time-pose`**.
 
-- Instale as dependências do projeto utilizando **`npm install`**.
+- Install the project dependencies using **`npm install`**.
 
-- Inicie a aplicação usando npm start.
+- Start the application using **`npm start`**.
 
-- Acesse a aplicação em seu navegador, através do endereço **`http://localhost:3000`**.
+- Access the application in your web browser by navigating to **`http://localhost:3000`**.
 
-## Contribuição
+## Contribution
 
-Este projeto foi desenvolvido como parte de um trabalho acadêmico e não está sendo mantido ativamente. No entanto, se você encontrar algum problema ou tiver alguma sugestão de melhoria, sinta-se à vontade para abrir uma issue ou enviar um pull request.
+This project was developed as part of an academic assignment and is not actively maintained. However, if you encounter any issues or have suggestions for improvements, please feel free to open an issue or submit a pull request.
 
-## Licença
+## License
 
-Este projeto está licenciado sob a BSD 3-Clause "New" or "Revised" License - consulte o arquivo LICENSE para obter detalhes.
+This project is licensed under the BSD 3-Clause "New" or "Revised" License - see the LICENSE file for details.
