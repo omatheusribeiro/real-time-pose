@@ -1,33 +1,64 @@
-# Real-Time Body Movement Detection with TensorFlow
+# 🤖 Real-Time Pose Application
 
-This repository contains a ReactJS application that utilizes the TensorFlow library to capture real-time body movements with the assistance of artificial intelligence.
+## 📌 Overview
+The **Real-Time Pose Application** is an advanced system designed to capture and classify real-time body movements using the **TensorFlow** library and **ReactJS**. 🚀
 
-## How It Works
+This repository contains an implementation of:
 
-The application utilizes the pre-trained PoseNet model provided by the TensorFlow.js library to detect real-time body poses from a webcam connected to the device.
+✅ **Real-Time Body Pose Detection and Movement Classification** 🏋️🤸‍♂️🤼
 
-Based on the detected poses, the application uses a neural network to classify the movement into one of the following categories: squat, push-up, or plank.
+## 📝 Description
+This application leverages the pre-trained **PoseNet** model from **TensorFlow.js** to detect real-time body poses through a connected webcam.
 
-The application's interface displays a webcam video feed, along with a list of the user's performed movements and a count of how many repetitions have been completed for each of the movements.
+The interface displays a live webcam feed, tracks the user's performed movements, and counts the repetitions for each exercise.
 
-## Installation and Usage
+## 🏗️ Project Structure
+```
+real-time-pose
+├── public/
+│   └── index.html      
+├── src/
+│   └── App.js   
+│   └── index.js    
+│   └── utilities.js       
+```
 
-To run the application locally, follow these steps:
+## 🚀 Getting Started
 
-- Clone this repository to your local machine using **`git clone https://github.com/omatheusribeiro/real-time-pose`**.
+### 📋 Prerequisites
+Make sure you have the following installed:
+- [Node.js](https://nodejs.org/) (v16+ recommended)
 
-- Navigate to the directory created by the repository clone using **`cd real-time-pose`**.
+### 🔧 Installation
+```sh
+git clone https://github.com/omatheusribeiro/real-time-pose.git
+```
+```sh
+cd real-time-pose
+```
+```sh
+# Install dependencies
+npm install
+```
 
-- Install the project dependencies using **`npm install`**.
+### ▶️ Running the Project
+```sh
+$env:NODE_OPTIONS="--openssl-legacy-provider"
+npm start
+```
+Then open your browser and go to: **http://localhost:3000/** 🚀
 
-- Start the application using **`npm start`**.
+## 🛠️ Technologies Used
+- **ReactJS**
+- **TensorFlow.js**
+- **JavaScript**
+- **HTML & CSS**
 
-- Access the application in your web browser by navigating to **`http://localhost:3000`**.
+## 🤝 Contributing
+Contributions are welcome! Feel free to fork the project and submit pull requests.
 
-## Contribution
+## 📜 License
+This project is licensed under the BSD 3-Clause License.
 
-This project was developed as part of an academic assignment and is not actively maintained. However, if you encounter any issues or have suggestions for improvements, please feel free to open an issue or submit a pull request.
-
-## License
-
-This project is licensed under the BSD 3-Clause "New" or "Revised" License - see the LICENSE file for details.
+## 🔗 Repository
+[GitHub Repository](https://github.com/omatheusribeiro/real-time-pose) 🌐
