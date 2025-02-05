@@ -57,38 +57,21 @@ function App() {
   // Here, I set the dimensions where the camera will be displayed on the screen,
   // and use it to pass movement information to the webcamRef variable.
   return (
-    <div className="App">
-      <header className="App-header">
-        <Webcam
-          ref={webcamRef}
-          style={{
-            position: "absolute",
-            marginLeft: "auto",
-            marginRight: "auto",
-            left: 0,
-            right: 0,
-            textAlign: "center",
-            zIndex: 9,
-            width: 640,
-            height: 480,
-          }}
-        />
+    <div>
+      <Webcam
+        ref={webcamRef}
+        muted={true}
+        style={{
+          borderRadius: 10
+        }}
+      />
 
-        <canvas
-          ref={canvasRef}
-          style={{
-            position: "absolute",
-            marginLeft: "auto",
-            marginRight: "auto",
-            left: 0,
-            right: 0,
-            textAlign: "center",
-            zIndex: 9,
-            width: 640,
-            height: 480,
-          }}
-        />
-      </header>
+      <canvas
+        ref={canvasRef}
+        style={{
+          right: 45
+        }}
+      />
     </div>
   );
 
