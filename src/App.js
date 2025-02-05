@@ -9,7 +9,7 @@ function App() {
   const webcamRef = useRef(null);
   const canvasRef = useRef(null);
 
-  //inicializa a logica do programa
+  // Initializes the program logic
   const runPosenet = async () => {
     const net = await posenet.load({
       inputResolution: { width: 640, height: 480 },
@@ -20,7 +20,7 @@ function App() {
     }, 100);
   };
 
-  //detecta as movimentacoes feitas na webcam e captura os logs de cada micro-movimentcao
+  // Detects movements from the webcam and captures logs of each micro-movement
   const detect = async (net) => {
     if (
       typeof webcamRef.current !== "undefined" &&
@@ -41,7 +41,7 @@ function App() {
     }
   };
 
-  //desenha os pontos e os tracos no squeleto
+  // Draws keypoints and skeleton lines
   const drawCanvas = (pose, video, videoWidth, videoHeight, canvas) => {
     const ctx = canvas.current.getContext("2d");
     canvas.current.width = videoWidth;
@@ -53,8 +53,9 @@ function App() {
 
   runPosenet();
 
-  //Abaixo eu estou abrindo a TAG Webcam, que esta sendo carregada da biblioteca react-webcam. Nela eu passo as dimensoes de ontem sera exibido a camera na tela e tambem 
-  //utilizo ela para passar informacoes das minhas movimentacoes para a variavel webcamRef
+  // Below, the Webcam tag is being opened, loaded from the react-webcam library.
+  // Here, I set the dimensions where the camera will be displayed on the screen,
+  // and use it to pass movement information to the webcamRef variable.
   return (
     <div className="App">
       <header className="App-header">
@@ -67,7 +68,7 @@ function App() {
             left: 0,
             right: 0,
             textAlign: "center",
-            zindex: 9,
+            zIndex: 9,
             width: 640,
             height: 480,
           }}
@@ -82,7 +83,7 @@ function App() {
             left: 0,
             right: 0,
             textAlign: "center",
-            zindex: 9,
+            zIndex: 9,
             width: 640,
             height: 480,
           }}
@@ -91,7 +92,7 @@ function App() {
     </div>
   );
 
-  //Um pouco acima temos a TAG canvas que esta sendo utilizada para desenhar os pontos de movimentos e o esqueleto da movimentacao.
+  // A little above, we have the canvas tag, which is used to draw the movement keypoints and the skeleton.
 }
 
 export default App;
