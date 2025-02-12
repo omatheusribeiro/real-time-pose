@@ -12,7 +12,7 @@ This application leverages the pre-trained **PoseNet** model from **TensorFlow.j
 
 The interface displays a live webcam feed, tracks the user's performed movements, and counts the repetitions for each exercise.
 
-## 🏗️ Project Structure
+## 🏗️ Project Structure 
 ```
 real-time-pose
 ├── public/
