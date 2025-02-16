@@ -8,7 +8,7 @@ This repository contains an implementation of:
 ✅ **Real-Time Body Pose Detection and Movement Classification** 🏋️🤸‍♂️🤼
 
 ## 📝 Description
-This application leverages the pre-trained **PoseNet** model from **TensorFlow.js** to detect real-time body poses through a connected webcam.
+This application leverages the pre-trained **PoseNet** model from **TensorFlow.js** to detect real-time body poses through a connected webcam. 
 
 The interface displays a live webcam feed, tracks the user's performed movements, and counts the repetitions for each exercise.
 
