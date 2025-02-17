@@ -1,4 +1,4 @@
-# 🤖 Real-Time Pose Application
+# 🤖 Real-Time Pose Application 
 
 ## 📌 Overview
 The **Real-Time Pose Application** is an advanced system designed to capture and classify real-time body movements using the **TensorFlow** library and **ReactJS**. 🚀
